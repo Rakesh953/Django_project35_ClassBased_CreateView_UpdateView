@@ -1,0 +1,21 @@
+{% extends 'app/Base.html' %}
+
+
+{% block title %}
+<title>SchoolList</title>
+{% endblock %}
+
+
+{% block body_block %}
+
+<center>
+    <h1>SchoolList</h1>
+
+    {% for so in schools %}
+        <a href="{{so.pk}}"><h2>{{so.Scname}}</h2></a>
+    {% endfor %}
+
+</center>
+
+{% endblock %}
+    
